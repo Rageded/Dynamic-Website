@@ -1,0 +1,47 @@
+
+	
+
+#calc {
+	background-color: #9CF;
+	width: 200px;
+	border-radius: 10px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 10px 10px 5px #333;
+}
+.button {
+	margin: 3px;
+	width: 30px;
+}
+.top.button {
+	background-color: #CCC;
+	border-radius: 5px;
+}
+.operator.button {
+	background-color: #F06;
+	border-radius: 5px;
+}
+.number.button {
+	background-color: #FFF;
+	border-radius: 5px;
+}
+.clear.button {
+	background-color: #F93;
+	border-radius: 5px;
+	width: 115px;
+}
+#former {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+}
+form {
+	
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}

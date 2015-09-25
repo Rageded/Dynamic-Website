@@ -1,0 +1,82 @@
+<div id="calcCont" class="indexDiv">
+  <article class="content">
+    <h3>Calculator with Inputs</h3>
+	  <p><a title="Javascript is used to make sure the right fields are filled. Upon submitting and all fields are filled correctly, an Alert message will display." class="tooltip "><span title="info" class="inf">i</span></a></p>
+	  <p>Input fields with a simple functional calculator. Save button will take the number in calculator and save it
+		  . Once you press submit, the program will check inputs and display an Alert message. All fields must be filled and the id field must be 9 digits.
+    <form name="cal" method="post" onsubmit="return validateForm();">
+      <div id = former> <h3>First Name:</h3>
+        <input type="text" id="firstName" value="" style = "display: inline;">
+        <br>
+        <h3>Last Name:</h3>
+        <input type="text" id="lastName" value="" style = "display: inline;">
+        <br>
+        <h3>Student ID number:</h3>
+        <input type="text" id="id" value="" maxlength ="9" style = "display: inline;">
+        <br>
+        <h3>Notes:</h3>
+        <textarea  id="writearea"   value="" style = "display: inline;"></textarea>
+      </div>
+		<p id = "er"> </p><!-- errors alert -->
+      <div id="calc" >
+		  <span style="text-align:center; "><strong>Calculator</strong></span>
+        <input type="text" id="result" onfocus="this.value =''" name="result" value="">
+        <p>
+          <input type="button" id="clear" class="clear button" value="C" 
+      	>
+          <input type="button" id="divid" class="top operator button" value="/" 
+      	>
+        </p>
+        <p>
+          <input type="button" id="seven" class="number button" value="7" 
+      	>
+          <input type="button" id="eight" class="number button" value="8" 
+      	>
+          <input type="button" id="nine" class="number button" value="9" 
+      	>
+          <input type="button" id="multipl" class="operator button" value="*" 
+      	>
+        </p>
+        <p>
+          <input type="button" id="four" class="number button" value="4" 
+      >
+          <input type="button" id="five" class="number button" value="5" 
+      	>
+          <input type="button" id="six" class="number button" value="6" 
+      	>
+          <input type="button" id="minu" class="operator button" value="-" 
+      >
+        </p>
+        <p>
+          <input type="button" id="one" class="number button" value="1" 
+      >
+          <input type="button" id="two" class="number button" value="2" 
+      	>
+          <input type="button" id="three" class="number button" value="3" 
+      	>
+          <input type="button" id="ad" class="operator button" value="+" 
+      	>
+        </p>
+        <p>
+          <input type="button" id="left"class="top button" value="<<" 
+      >
+          <input type="button" id="zero" class="bot number button" value="0" 
+      	>
+          <input type="button" id="right" class="top button" value=">>" 
+      	>
+          <input type="button" id="equa" class="top equal button" value="=" 
+      	>
+        </p>
+      </div>
+      <input type="button" id="save" name="save" value="Save">
+      <input type="submit" value="Submit">
+    </form>
+    <label for ="mySpan" style="text-align:center; color:#0F0">Number Saved: </label>
+    <span id="mySpan" style="text-align:center; color:red;"> </span>
+    <p id = "alert" style="color:#F00;"> </p>
+    
+    <!-- end .content --></article>
+  
+    
+  
+</div> 

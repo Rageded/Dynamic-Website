@@ -1,0 +1,416 @@
+@charset "utf-8";
+/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+.white {
+	background-color: #FFF;
+	color: #000;
+	padding: 5%;
+}
+.white p{
+	color: #000;
+}
+.white h2{
+	color: #050;
+}
+
+#popup {
+	z-index:1;
+	display:none;
+	position:absolute;
+	right:0;
+	left:0;
+	margin: 0 10px;
+	
+}
+
+/* Mobile Layout: 480px and below. */
+
+footer {
+	padding: 5%;
+}
+
+footer input{
+	margin: 3%;
+}
+
+.formStyle{
+	width: 90%;
+	display: block;
+}
+
+.areaText{
+	width: 90%;
+	display: block;
+	height: 30px;
+	margin: 3%;
+}
+
+.blackDiv {
+	background-color: #000;
+	padding: 5%;
+}
+
+
+
+body{ background-size: 700px;
+	background-position: 50% 70px;
+}
+
+.tooltip{
+	display:inline;
+	position: relative;
+	 cursor: help;
+}
+
+.tooltip:hover:after { 
+	 background: #3399FF;
+	 cursor: help;
+	
+	font-family:  Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+	font-weight: bold;
+    background: rgba(0,255,0,.90);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #000;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+}
+
+.tooltip:hover:before{
+    border: solid;
+    border-color: #0F0 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+	 cursor: help;
+}
+
+.inf {
+	font-size: 2em;
+	color: #0F0;
+	box-shadow:0 0 50px #0F0,0 0 150px #0F0;
+	 cursor: help;
+	
+}
+
+
+li {
+	color: #0F0;
+}
+
+nav {
+	display: none;
+}
+
+#navSystem {
+	display: none;
+	
+}
+
+.gridContainer {
+	background-color: #303030;
+	width: 100%;
+	border-radius: 10px;
+	
+}
+#LayoutDiv1 {
+	
+	clear: both;
+	margin: 10px auto;
+	width: 95%;
+	padding: 5px;	
+	display: block;
+	border-radius: 10px;
+	
+}
+
+header {
+	margin-top: -18px;
+	background-color: #303030;
+ 	margin-bottom: 150px;
+	padding-top: 5px;
+	overflow:hidden;
+	
+}
+
+.mobileButton {
+	display: inline;
+	float:left;
+	margin-top: 10px;	
+	width:  50px;
+	padding-bottom: 10px;	
+	margin-right: 5px;
+	background: none;
+	border: none;	
+   }
+
+.mobileButton:hover {
+   
+   background: #1a1c19;
+   color: #3069b0;
+   }
+
+.mobileButton:active {
+   
+   background: #0a0c0d;
+   }
+
+p.thicker {
+	margin:none;
+	color: #0F0;
+	font-weight: 1000px;
+	margin: -5px;
+}
+
+.buttonTrigger {
+	display: block;
+	margin: 5px;
+}
+
+.buttonArt {
+   border-top: 1px solid #b4b9d9;
+   background: #449609;
+   background: -webkit-gradient(linear, left top, left bottom, from(#d6dee3), to(#449609));
+   background: -webkit-linear-gradient(top, #d6dee3, #449609);
+   background: -moz-linear-gradient(top, #d6dee3, #449609);
+   background: -ms-linear-gradient(top, #d6dee3, #449609);
+   background: -o-linear-gradient(top, #d6dee3, #449609);
+   padding: 5.5px 11px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #030303;
+   font-size: 15px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.buttonArt:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.buttonArt:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+
+
+main { 
+	margin: 0 ;	
+}
+
+#umess {
+	width: 70%;
+	height: 100px;
+}
+
+#mobMenu {
+	width: 300px;	
+	z-index: 10;
+	top:70px;
+	position: absolute;	
+	background: #1a1c19;	
+	border-right: 2px solid #fff;
+	
+	
+}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+body{ background-size: 1100px;
+	background-position: 50% 70px;
+}
+
+
+.gridContainer {
+	width: 100%;
+	
+}
+#LayoutDiv1 {
+	clear: both;		
+	width: 90%;
+	display: block;
+}
+header {	
+ 	margin-bottom: 240px;	
+}
+	
+.mobileButton {
+	display: inline;
+}
+	
+.buttonTrigger {
+	display: inline;
+}
+	
+.indexDiv {
+	width:80%;
+	padding: 5%;
+	
+	margin: 0 10px;
+	border-radius: 10px;
+}
+	
+.indexDiv li {
+	color: #0F0;
+}
+}
+ /* medium to desktop 796 to 1000px */
+@media only screen and (min-width: 769px) {
+body{ background-size: 1500px;
+	background-position: 50% 5px;
+}	
+
+header h1 {
+	text-align: left;
+	margin-left: 5%;
+}
+nav {
+	display : block;
+}
+
+.glow:hover{
+text-shadow: 1px 0px 0px #686868, 1px 1px 0px #686868, 0px 1px 0px #686868, 
+    -1px 1px 0px #686868, -1px 0px 0px #686868, -1px -1px 0px #686868, 
+    0px -1px 0px #686868, 1px -1px 0px #686868, 1px 4px 5px #aeaeae;
+}
+	
+
+
+#navDoor{
+	position: relative; 
+	background-color:#555;
+	
+}
+
+#navSystem {
+	
+	
+	position: absolute;		
+	z-index:1;
+	left: 0;
+	right:0;
+	top: 75px;
+	margin-left:0;
+	margin-right:0;
+	
+}
+#navSystem li{
+	display: inline;
+	font-size: 2em;
+	margin: 5px;
+}
+	
+.gridContainer {
+	width: 100%;
+	
+	
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	
+	width: 95%;
+	display: block;
+}	
+#relativeContent { width: 90%;  height:800px; background-color: rgba(0,0,255,.8); margin: 0 auto; position: absolute;
+	 z-index: 3; top:20px; border-radius:20px;}
+	
+
+header {
+	
+	
+	margin-bottom: 310px;
+	
+}	
+.mobileButton {
+	display: none;
+}	
+	
+.buttonTrigger {
+	display: inline;	
+}
+	
+#mobMenu {
+	display: none;
+}
+
+/* Desktop Layout: 1000px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1000px) {
+body{ background-size: 1900px;
+	background-position: 50% 5px;
+}	
+	
+.formStyle{
+	width: 30%;
+	display: inline;
+	height:50px;
+}	
+	
+.areaText{
+	width: 80%;
+	display: inline;
+	height: 80px;
+}
+.gridContainer {
+	width: 100%;
+	
+	
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	
+	width: 95%;
+	display: block;
+}	
+#relativeContent { width: 80%;  height:800px; background-color: rgba(0,0,255,.8); 
+	margin: 0 auto; position: absolute;
+	 z-index: 1; top:20px; border-radius:20px;
+}
+	
+
+header {
+	
+	
+	margin-bottom: 340px;
+	
+}	
+	.buttonTrigger {
+	display: inline;
+}
+
+}
+
+#ajaxCont { padding-top: 10px;}
+
+
+
+.close_box:hover{ color: red; }
+
+
+
+
