@@ -1,0 +1,17 @@
+<library path="lib/librqt_mission">
+  <class name="rqt_mission/MyPlugin" type="rqt_mission::MyPlugin" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      UAV
+    </description>
+    <qtgui>
+      <group>
+        <label>UAV</label>
+        <icon type="theme">folder</icon>
+        <statustip>UAV TOOLS</statustip>
+      </group>
+      <label>Mission</label>
+      <icon type="theme">image-x-generic</icon>
+      <statustip>Mission stats</statustip>
+    </qtgui>
+  </class>
+</library>
